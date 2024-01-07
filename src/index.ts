@@ -231,9 +231,12 @@ async function scrp(page: Page) {
 
       result.name = cNameEl?.childNodes[0]?.textContent ?? undefined;
       result.description = tableRows[0]?.children[2]?.textContent ?? undefined;
-      result.claimed = !!cNameEl?.getElementsByClassName(
+
+      const claimedBadge = cNameEl?.getElementsByClassName(
         "claim-badge-tooltip",
-      )[0];
+      )[0] as HTMLSpanElement;
+
+      result.claimed = claimedBadge?.style.display === "inline-block";
       result.status =
         entry.getElementsByClassName("comapny-status-text")[0]?.textContent ??
         undefined;
