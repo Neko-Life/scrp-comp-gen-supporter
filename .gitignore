@@ -1,0 +1,7 @@
+config.ts
+data.json
+dist/
+
+.DS_Store
+node_modules
+*.log

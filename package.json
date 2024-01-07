@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "puppeteer": "^21.7.0"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^5.1.4",
+    "jasmine-core": "^5.1.1",
+    "karma": "^6.4.2",
+    "karma-chrome-launcher": "^3.2.0",
+    "karma-jasmine": "^5.1.0",
+    "karma-webpack": "^5.0.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3",
+    "webpack": "^5.89.0",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "name": "scrp-list",
+  "version": "0.0.1",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node dist"
+  },
+  "author": "Neko-Life",
+  "license": "AGPL-3.0-or-later",
+  "description": ""
+}
